@@ -8,8 +8,7 @@ public class Timer : MonoBehaviour
     public Text textTimer;
     public float time = 50;
     public bool rotation = false;
-    void Update()
-    {
+    void Update(){
         if(time > 0){
         time -= Time.deltaTime;
         textTimer.text = "Tiempo: " + time.ToString("f0");

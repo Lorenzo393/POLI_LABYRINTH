@@ -37,6 +37,4 @@ public class Game_Over_Manager : MonoBehaviour
             Destroy(green_limit);
         }
     }
-
-
 }

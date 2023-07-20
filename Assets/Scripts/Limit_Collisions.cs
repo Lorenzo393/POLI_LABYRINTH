@@ -8,13 +8,10 @@ public class Limit_Collisions : MonoBehaviour
     public GameObject blue_ball;
     public GameObject red_ball;
     public GameObject green_ball;
-    
     private Rigidbody rigid_player;
-    
     void Start(){
         rigid_player = player.GetComponent<Rigidbody> ();
     }
-
     private void OnCollisionEnter(Collision collision){
 
         if(collision.gameObject.CompareTag("Player")){
